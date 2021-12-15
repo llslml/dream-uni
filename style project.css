@@ -1,0 +1,406 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lato', sans-serif;
+}
+.heading{
+    height: 730px;
+    width: 84%;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 170px;
+    height: 175px; /* evvel height yazmamiwdim bax birde bu hisseye*/
+}
+.nav-bar-links{
+    padding: 28px 0;
+}
+.nav-bar-links li{
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 16px;
+}
+.nav-bar-links li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    padding: 5px 0;
+    position: relative;
+}
+.nav-bar-links li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom:0;
+    left:0;  
+    transition: 0.5s;
+}
+.nav-bar-links li a:hover::after {
+    width:100%;
+    background: #ff3d04;      /* reng yada bu color:#ff * #ff3d04  */
+}
+.join-button{
+    background:#fff;
+    color: black;
+    padding: 9px 27px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.join-button:hover, .join-button:focus{
+    background-color: #ff3d04;
+    color: #fff;
+}
+.content{
+    position: absolute;
+    left: 37%;
+}
+.content h1{
+    position: relative;
+    top: 150px;
+    right: 85px;
+    font-size: 67px;
+    font-weight:200;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    color: white;
+}
+.back-video{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+/* -------------------------  About  -------------------------*/
+
+.about{
+    padding: 5% 9%;
+    background-color: white;
+}
+.about h1{
+    text-align: left;
+    color: #0d0879;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.about h3{
+    padding: 0% 20%;
+    text-align: center;
+    font-size: 30px;
+    color:#ff3d04;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+}
+.about p{
+    padding: 0% 20%;
+    text-align: justify;
+    width: 65%;
+    font-size: 20px;
+}
+
+/* ---------------------  WISHES PART  --------------------*/
+
+.wish-cards{
+    padding: 5% 9%;
+    background-color: white;
+    margin-bottom: 26%;
+}
+.wish-cards h1{
+    text-align: left;
+    color: #0d0879;   /* yada bu reng : #09009B*/
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.card{
+    background-color: white;
+    position: relative;
+    text-align: left;
+    float: left;
+    width: 400px;
+    padding: 3px;
+}
+.info1{
+    background-color:rgb(15, 9, 122,0.5);
+    position: absolute;
+    bottom: 23px;
+    width: 89%;
+    height: 80px;
+    color:white;
+}
+.child1{
+    height: 400px;
+    width: 90%;
+}
+.dream1{
+    background-color: rgb(204, 204, 204);
+    position: absolute;
+    width: 89%;
+    bottom:3px;
+    height: 30px;
+    color:#0d0879;
+    font-size: 20px;
+    text-align: center;
+}
+.child2{
+    height: 400px;
+    width: 91%;
+}
+.info2{
+    background-color:rgb(15, 9, 122,0.5);
+    position: absolute;
+    bottom: 23px;
+    width: 90%;
+    height: 80px;
+    color:white;
+}
+.dream2{
+    background-color: rgb(204, 204, 204);
+    position: absolute;
+    width: 90%;
+    bottom:3px;
+    height: 30px;
+    color:#0d0879;
+    font-size: 20px;
+    text-align: center;
+}
+.child3{
+    height: 400px;
+    width: 90%;
+}
+.info3{
+    background-color:rgb(15, 9, 122,0.5);
+    position: absolute;
+    bottom: 23px;
+    width: 90%;
+    height: 80px;
+    color:white;
+}
+.dream3{
+    background-color: rgb(204, 204, 204);
+    position: absolute;
+    width: 90%;
+    bottom:3px;
+    height: 30px;
+    color:#0d0879;
+    font-size: 20px;
+    text-align: center;
+}
+/* -------------------  APPLY FOR A WISH  -----------------*/
+.make-a-wish{
+    padding: 5% 9%;
+    background-color: white;
+}
+.make-a-wish h1{
+    text-align: left;
+    color: #0d0879;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.about h3{
+    padding: 0% 20%;
+    text-align: center;
+    font-size: 30px;
+    color:#ff3d04;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+}
+.make-a-wish-text{
+   text-align: justify;
+   padding: 60px 80px; 
+   background-color:#f0f5fa;
+   height: 50%;
+   width: 50%;
+   color:#0057b8;
+   font-size: 21px;
+   border-bottom-left-radius: 35px;
+   border-bottom-right-radius: 35px;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+.make-a-wish-text button{
+    position: absolute;
+    top:338%;
+    left:27%;
+    background-color: #0057b8;
+    color: white;
+    font-size: 18px; 
+    padding: 12px 20px;
+    border-radius: 15px;
+}
+.make-a-wish-text button:hover{
+    background-color: rgb(18, 68, 124);
+    color: white;
+}
+
+/*-----------------------  JOIN US   ----------------------*/
+.join-us{
+    padding: 9% 33%;
+    background-color: white;
+    background-image: linear-gradient(to right, #8693ab ,#005AA7 ); /* 1. #bdd4e7 to #8693ab 2. #fffde4 to #005AA7 */
+}
+.join-us h1{
+    padding-top: 4%;
+    text-align: center;
+    color: #0d0879;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.join-form{
+    background: rgb(248, 237, 227,0.4);/*#845460 rgb(132, 84, 96) ya da rgb(128,128,128,0.109)*/
+    width: 90%;
+    height: 550px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px 0 rgb(10, 5, 94, 0.2), 0 8px 30px 0 rgba(10, 5, 94, 0.19); /* bura bir de baxx */
+}
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color:#F7F3E9; /*#F7F3E9 ya da indiki: #FAF1E6 ya da #FAF3E0*/
+}
+select{
+    width:15%;
+    height: 45px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #F7F3E9;
+}
+.phone{
+    width: 64%;
+}
+.bd{
+    text-align: left;
+    padding: 0% 10%;
+    color: #0d0879;
+    font-size: 21px;
+    width: 95%;
+}
+.sign-up{
+    position: absolute;
+    color:white;
+    background-color: #233E8B; /* #0057b8 normalda bu idi: #233E8B*/
+    width: 7%;
+    height: 6%;
+    left: 44%;
+    top: 442%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.sign-up:hover{
+    background-color: #0d0879;
+    color: white;
+}
+/*--------------------  Contact us  -----------------*/
+.footer{
+    padding: 2% 9%;
+    background-image: linear-gradient(#0d324d, black ); /* #5584AC ya da #87AAAA esas bu: #DADDFC   gradient: #0d324d, #7f5a83*/
+    font-size: 20px;
+    color: #fff;
+}
+.logo-end{
+    width: 170px;
+    height: 210px;
+}
+.footer h1{
+    text-align: center;
+    color: #FAF1E6;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+.footer h3{
+    color: #fe8002;
+    font-size: 25px;
+}
+.end-about{
+    position: absolute;
+    left: 34%;
+    top: 485%;
+}
+.contact-end{
+    position: absolute;
+    left: 68%;
+    top: 485%; /*503%  */
+}
+.call{
+    padding: 2% 1%;
+}
+.call-image{
+    width: 7%;
+    height: 6%;
+    display: inline;
+    float: left;
+    padding-right: 2%;
+}
+.mail{
+    padding: 2% 1%;
+}
+.mail-image{
+    width: 8%;
+    height: 100%;
+    display: inline;
+    padding-right: 2%;
+}
+/*social media*/
+.social-media{
+    padding: 0% 1%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.facebook{
+    padding-right: 1%;
+    position: absolute;
+    top: 512%;
+    left: 36%;
+    width: 48px;
+    height: 6%;
+    display: inline;
+    float: left;
+}
+.facebook:hover{
+    transform: scale(1.12); 
+}
+.instagram{
+    padding-right: 1%;
+    position: absolute;
+    top: 512%;
+    left: 43%;
+    width: 48px;
+    height: 6%;
+    display: inline;
+    float: left;
+}
+.instagram:hover{
+    transform: scale(1.12); 
+}
+.twitter{
+    position: absolute;
+    top: 512%;
+    left: 50%;
+    width: 3%;
+    height: 6%;
+}
+.twitter:hover{
+    transform: scale(1.12); 
+}
+.end{
+    position: absolute;
+    left: 38%;
+    color: rgba(241, 238, 238, 0.795);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
